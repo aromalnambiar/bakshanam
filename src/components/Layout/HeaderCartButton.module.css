@@ -1,0 +1,59 @@
+.cart__button {
+    padding: 10px 0;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+    align-self: start;
+    z-index: 100;
+  }
+  
+  .cart__button svg {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 1px;
+    width: 15%;
+  }
+  
+  .cart__button .badge {
+    display: inline;
+    margin-left: 10px;
+    background-color: var(--primarybackground);
+    color: var(--dark);
+    padding: 2px 13px 2px 13px;
+    border-radius: 11px;
+  }
+  
+  .cart__button:hover {
+    background-color: #ef4c06;
+  }
+  
+  .bump.cart__button {
+    animation: bump 0.3s ease 0s 1 normal;
+  }
+
+  .badge{
+    background-color: #fff !important; 
+    color: rgb(20, 100, 196) !important;
+  }
+  
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
