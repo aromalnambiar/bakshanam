@@ -1,0 +1,23 @@
+.FoodImg{
+ width: 300px;
+ height: 200px;
+ border-radius: 20px;
+ object-fit: cover;
+ margin: auto;
+ display: block;
+}
+
+.FoodTopContainer p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+	background: linear-gradient(111.5deg, rgb(20, 100, 196) 0.4%, rgb(33, 152, 214) 100.2%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.FoodInformation p{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+}

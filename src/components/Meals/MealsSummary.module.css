@@ -1,0 +1,35 @@
+.mealsHeadeing{
+    margin-top: 30%;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-size: 52px;
+    width: 590px;
+}
+
+.mealsHeadeing{
+    color: rgb(106, 106, 106);
+}
+
+.mealsHeadeing span{
+    background: linear-gradient(111.5deg, rgb(20, 100, 196) 0.4%, rgb(33, 152, 214) 100.2%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.MealsDescription{
+    color: rgb(106, 106, 106);
+    width: 400px;
+    margin-top: 30px;
+}
+
+.MealsDescription span{
+    background: linear-gradient(111.5deg, rgb(20, 100, 196) 0.4%, rgb(33, 152, 214) 100.2%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+/* availble item  */
+

@@ -37,8 +37,9 @@ header {
   
  
  .bgImg{
-    width: 40%;
     margin-left: auto;
+    width: 700px;
+    max-width: 130% !important;
  }
 
   header.headerNotFloating {
@@ -53,3 +54,30 @@ header {
     0px 12px 25px rgba(172, 171, 171, 0.1);
   }
   
+
+  .homeContainer{
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 100vh;
+  }
+
+  .FoodTitleContainer{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .FoodTitleContainer h1{
+    font-size: 60px; 
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    background: linear-gradient(111.5deg, rgb(20, 100, 196) 0.4%, rgb(45, 151, 208) 100.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .FoodTitleContainer p {
+    color: grey;
+    font-size: 20px;
+  }

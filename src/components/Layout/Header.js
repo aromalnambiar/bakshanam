@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import style from './Header.module.css'
 import HeaderCartButton from './HeaderCartButton';
-import Img from '../../assets/header_img.png'
+
+
 
 function Header(props) {
 
@@ -29,9 +30,7 @@ function Header(props) {
         <h1>Bakshanam</h1>
         <HeaderCartButton/>
     </header>
-    <div>
-            <img className={style.bgImg} src={Img} alt="img" />
-    </div>
+    
     </>
   )
 }
