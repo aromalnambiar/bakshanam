@@ -7,6 +7,8 @@ header {
     background-color: rgb(212, 236, 255); 
     color: #fff; 
     padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +20,7 @@ header {
   header h1 {
     font-size: 24px; 
     margin: 0;
+    font-weight: bold;
     text-transform: uppercase;
 	background: linear-gradient(111.5deg, rgb(20, 100, 196) 0.4%, rgb(33, 152, 214) 100.2%);
 	-webkit-background-clip: text;

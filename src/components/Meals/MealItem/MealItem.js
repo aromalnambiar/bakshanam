@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './MealItem.module.css'
+import MealItemForm from './MealItemForm'
 
 function MealItem(props) {
 
@@ -14,11 +15,10 @@ function MealItem(props) {
               <p>{Iprops?.name}</p>
           </div>
 
-          <div className={`flex justify-between ${styles.FoodInformation}`} >
+          <div className={`flex justify-between items-center ${styles.FoodInformation}`} >
             <p>{Iprops?.price} $ </p>
             <div className='flex flex-row justify-center items-center' >
-              <input type='number' />
-              <button>ADD</button>
+              <MealItemForm/> 
             </div>
           </div>
           

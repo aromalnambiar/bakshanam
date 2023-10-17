@@ -1,0 +1,14 @@
+.MealForm {
+    display: flex;
+}
+
+.MealForm button{
+    background: linear-gradient(111.5deg, rgb(20, 100, 196) 0.4%, rgb(33, 152, 214) 100.2%);
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px; 
+    margin-left: 10px;
+}

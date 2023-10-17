@@ -1,8 +1,11 @@
 import React from 'react'
+import styles from './Input.module.css'
 
-function Input() {
+function Input(props) {
   return (
-    <div>Input</div>
+    <div className={styles.Input} >
+      <input id={props?.input?.id} {...props.input} />
+    </div>
   )
 }
 
