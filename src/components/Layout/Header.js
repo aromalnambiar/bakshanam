@@ -28,7 +28,7 @@ function Header(props) {
     <>
     <header className={`${style.header} ${isFloating ? '' : style.headerNotFloating}`} >
         <h1>Bakshanam</h1>
-        <HeaderCartButton/>
+        <HeaderCartButton onClick={props?.onShowCart} />
     </header>
     
     </>
