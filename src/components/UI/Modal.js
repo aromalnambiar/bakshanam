@@ -24,7 +24,7 @@ const ModalOverLay = (props) => {
   //END
 };
 
-const modalElements = document.getElementById("modal-overlay");
+const modalElements = document.getElementById("overlays");
 
 const Modal = (props) => {
   //Rendered the components above

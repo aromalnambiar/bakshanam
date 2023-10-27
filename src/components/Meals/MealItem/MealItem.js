@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './MealItem.module.css'
 import MealItemForm from './MealItemForm'
+import CartContext from '../../../store/CartContext'
 
 function MealItem(props) {
 
   const Iprops = props?.data
+  const cartCtx = useContext(CartContext)
+
+  const onAddToCartHandler = (amount) => {
+    cartCtx.addItem({
+      id: Iprops.id,
+      name: Iprops.name,
+      amout: amount,
+      price: Iprops.price,
+      src: Iprops.imageLink,
+    })
+  }
+
+  console.log(Iprops.imageLink)
   
   return (
     <div>
@@ -18,7 +32,7 @@ function MealItem(props) {
           <div className={`flex justify-between items-center ${styles.FoodInformation}`} >
             <p>{Iprops?.price} $ </p>
             <div className='flex flex-row justify-center items-center' >
-              <MealItemForm/> 
+              <MealItemForm onAddToCart={onAddToCartHandler} /> 
             </div>
           </div>
           

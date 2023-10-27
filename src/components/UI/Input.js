@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import styles from './Input.module.css'
 
-function Input(props) {
+const Input = forwardRef((props, ref) =>  {
   return (
     <div className={styles.Input} >
-      <input id={props?.input?.id} {...props.input} />
+      <input ref={ref} id={props?.input?.id} {...props.input} />
     </div>
   )
-}
+})
 
 export default Input

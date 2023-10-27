@@ -86,7 +86,7 @@ function AvailableMeals() {
       <div className={`grid grid-cols-2 gap-4 justify-center items-center `} >
             {DUMMY_MEALS?.map((item) => (
               <div className="flex items-center justify-center" key={item.id}>
-                <MealItem data={item} />
+                <MealItem  data={item} />
               </div>
             ))}
         </div>

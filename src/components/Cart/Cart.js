@@ -3,6 +3,7 @@ import CartItem from "./CartItem";
 import Modal from "../UI/Modal";
 import styles from "./Cart.module.css";
 import CartContext from "../../store/CartContext";
+import TheButton from "../UI/Button";
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
@@ -19,12 +20,14 @@ const Cart = (props) => {
     cartCtx.removeItem(id);
   };
 
+  console.log(" cart",cartCtx)
+
   var cartItems = cartCtx.items.map((item) => (
     <CartItem
       name={item.name}
       amount={item.amount}
       price={item.price}
-      key={item.id}
+      key={`${item.src} ${item.id}`}
       src={item.src}
       onAdd={onAddHandler.bind(null, item)}
       onRemove={onRemoveHandler.bind(null, item.id)}
@@ -42,16 +45,16 @@ const Cart = (props) => {
           <p>{totalAmount}</p>
         </div>
         <div className={styles.buttons}>
-          <button
+          <TheButton
             onClick={props.onHideCart}
             className={` ${styles.btn_style} me-2`}
           >
             Close
-          </button>
+          </TheButton>
           {hasItems && (
-            <button className={styles.btn_style2} onClick={props.onOrder}>
+            <TheButton className={styles.btn_style2} onClick={props.onOrder}>
               Order
-            </button>
+            </TheButton>
           )}
         </div>
       </div>

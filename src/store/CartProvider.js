@@ -9,7 +9,8 @@ const defualtCartData = {
 const cartReducer = (state, action) => {
     if (action.type === "ADD") {
         const updatedItems = state.items.concat(action.item)
-        const updatedTotalAmount = state.totalAmount + action.item.price * action.item.totalAmount
+        const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amout
+     
         return {
             items: updatedItems,
             totalAmount: updatedTotalAmount
@@ -32,13 +33,15 @@ function CartProvider(props) {
     }
 
 
+
     const cartContext = {
-        items: [],
-        totalAmount: 0,
+        items: cartState.items,
+        totalAmount: cartState.totalAmount,
         addItem: AdditemOntheCart,
         removeItem: RemoveItemFromtheCart,
     }
 
+   
   return (
     <CartContext.Provider value={cartContext} >
         {props.children}
