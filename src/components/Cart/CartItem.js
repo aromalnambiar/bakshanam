@@ -28,10 +28,10 @@ const CartItem = (props) => {
         </div>
         <div className={styles.item_buttons}>
           <div onClick={props.onRemove}>
-            <i className="bi bi-dash"></i>
+            <button>-</button>
           </div>
           <div onClick={props.onAdd}>
-            <i className="bi bi-plus"></i>
+            <button>+</button>
           </div>
         </div>
       </div>

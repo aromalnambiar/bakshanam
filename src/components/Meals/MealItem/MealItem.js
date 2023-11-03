@@ -18,7 +18,7 @@ function MealItem(props) {
     })
   }
 
-  console.log(Iprops.imageLink)
+  
   
   return (
     <div>
@@ -30,7 +30,7 @@ function MealItem(props) {
           </div>
 
           <div className={`flex justify-between items-center ${styles.FoodInformation}`} >
-            <p>{Iprops?.price} $ </p>
+            <p>{Iprops?.price} ₹ </p>
             <div className='flex flex-row justify-center items-center' >
               <MealItemForm onAddToCart={onAddToCartHandler} /> 
             </div>

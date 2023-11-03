@@ -20,7 +20,7 @@ const Cart = (props) => {
     cartCtx.removeItem(id);
   };
 
-  console.log(" cart",cartCtx)
+ 
 
   var cartItems = cartCtx.items.map((item) => (
     <CartItem
