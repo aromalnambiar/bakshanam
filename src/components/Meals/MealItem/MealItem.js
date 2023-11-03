@@ -12,7 +12,7 @@ function MealItem(props) {
     cartCtx.addItem({
       id: Iprops.id,
       name: Iprops.name,
-      amout: amount,
+      amount: amount,
       price: Iprops.price,
       src: Iprops.imageLink,
     })

@@ -11,7 +11,7 @@ function HeaderCartButton(props) {
 
   const numberOfItems = cartCtx.items.reduce((curNumber, item) => {
 
-    return curNumber + item.amout
+    return curNumber + item.amount
   }, 0)
 
   return (

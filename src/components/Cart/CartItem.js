@@ -4,7 +4,10 @@ import styles from "./CartItem.module.css";
 const CartItem = (props) => {
 
 
-  const price = `Rs: ${props.price.toFixed(2)}`;
+  const price = `Rs: ${props.price.toFixed(2) * props.amount }`;
+
+  console.log(props)
+
   return (
     <>
       <div className={styles.item}>
